@@ -20,5 +20,11 @@ jobs:
           script: |
             cd ~/projects/simple_backend
             git pull origin main
+
+            # --- Load nvm so npm & pm2 are available ---
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm use 22.18.0   # switch to your Node version
+
             npm install
             pm2 restart simple_backend
