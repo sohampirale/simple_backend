@@ -27,4 +27,4 @@ jobs:
             nvm use 22.18.0   # switch to your Node version
 
             npm install
-            pm2 restart simple_backend
+            pm2 restart index.js
