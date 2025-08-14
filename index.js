@@ -8,7 +8,7 @@ app.get('/',(req,res)=>{
   })
 })
 
-app.get("sui",(req,res)=>{
+app.get("/sui",(req,res)=>{
   res.send("SUIIII CID wokring!!");
 })
 
