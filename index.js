@@ -2,7 +2,10 @@ import express from "express"
 const app=express();
 
 app.get('/',(req,res)=>{
-  res.send("Hello World from simple backend")
+  res.status(200).json({
+    message:'Hello World',
+    change:"Testing CICD first change'
+  })
 })
 
 app.listen("3000",()=>{
